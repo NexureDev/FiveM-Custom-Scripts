@@ -3,59 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QB Core Scripts Shop</title>
+  <title>QB Core Scripts Store</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow-md p-6">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">QB Core Scripts Shop</h1>
-      <nav>
-        <a href="#products" class="ml-6 text-blue-600 hover:underline">Scripts</a>
-        <a href="#about" class="ml-6 text-blue-600 hover:underline">Info</a>
-        <a href="#contact" class="ml-6 text-blue-600 hover:underline">Kontakt</a>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-white border-b shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">QB Scripts</h1>
+      <nav class="space-x-6 text-base font-medium">
+        <a href="#products" class="text-gray-700 hover:text-indigo-500">Scripts</a>
+        <a href="#about" class="text-gray-700 hover:text-indigo-500">Info</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-500">Kontakt</a>
       </nav>
     </div>
   </header>
 
-  <section class="container mx-auto mt-10" id="products">
-    <h2 class="text-xl font-semibold mb-4">Unsere beliebtesten Scripts</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded-xl shadow-md">
-        <h3 class="text-lg font-bold">Job Center Script</h3>
-        <p class="mt-2">Ein vollständiges Job Center mit UI und Integration in das QB-Core Framework.</p>
-        <p class="mt-2 font-semibold">Preis: 14,99€</p>
-        <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Jetzt kaufen</button>
-      </div>
-      <div class="bg-white p-4 rounded-xl shadow-md">
-        <h3 class="text-lg font-bold">Car Boosting Script</h3>
-        <p class="mt-2">Ermöglicht Spielern, Fahrzeuge zu stehlen und zu verkaufen. Mit vielen Konfigurationsmöglichkeiten.</p>
-        <p class="mt-2 font-semibold">Preis: 19,99€</p>
-        <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Jetzt kaufen</button>
-      </div>
-      <div class="bg-white p-4 rounded-xl shadow-md">
-        <h3 class="text-lg font-bold">Inventar Erweiterung</h3>
-        <p class="mt-2">Verbessertes UI und Item-System für das Standard-Inventar in QB-Core.</p>
-        <p class="mt-2 font-semibold">Preis: 9,99€</p>
-        <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Jetzt kaufen</button>
+  <section class="bg-indigo-600 text-white text-center py-20 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-extrabold mb-4">High-Quality FiveM QB Core Scripts</h2>
+      <p class="text-lg">Premium Scripts für Roleplay-Server, sofort einsatzbereit, leicht zu installieren und mit Support.</p>
+      <div class="mt-10">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width: 200px; height: 200px; margin: auto" loop autoplay></lottie-player>
       </div>
     </div>
   </section>
 
-  <section class="container mx-auto mt-16" id="about">
-    <h2 class="text-xl font-semibold mb-4">Warum unsere Scripts?</h2>
-    <p>Unsere QB Core Scripts sind vollständig getestet, einfach zu installieren und werden regelmäßig aktualisiert. Perfekt für Roleplay-Server, die sich von anderen abheben wollen.</p>
-  </section>
-
-  <section class="container mx-auto mt-16 mb-10" id="contact">
-    <h2 class="text-xl font-semibold mb-4">Kontakt</h2>
-    <p>Du hast Fragen? Schreib uns auf <a href="mailto:support@qbscripts.de" class="text-blue-600 hover:underline">support@qbscripts.de</a> oder besuche unseren Discord!</p>
-  </section>
-
-  <footer class="bg-white mt-10 py-6 shadow-inner">
-    <div class="container mx-auto text-center text-sm text-gray-600">
-      &copy; 2025 QB Core Scripts Shop. Alle Rechte vorbehalten.
+  <section class="container mx-auto py-16 px-4" id="products">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Unsere Scripts</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white rounded-xl border shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-semibold text-indigo-600">Job Center Script</h3>
+        <p class="mt-3 text-gray-600">Integriert ein modernes Jobcenter mit UI in dein QB-Core Framework.</p>
+        <p class="mt-4 font-semibold text-gray-800">14,99€</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="DEINE_BUTTON_ID_HIER">
+          <button class="mt-6 w-full py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Mit PayPal kaufen</button>
+        </form>
+      </div>
+      <div class="bg-white rounded-xl border shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-semibold text-indigo-600">Car Boosting Script</h3>
+        <p class="mt-3 text-gray-600">Fahrzeuge stehlen & Missionen mit Belohnungssystem. Realistische Funktionen.</p>
+        <p class="mt-4 font-semibold text-gray-800">19,99€</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="DEINE_BUTTON_ID_HIER">
+          <button class="mt-6 w-full py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Mit PayPal kaufen</button>
+        </form>
+      </div>
+      <div class="bg-white rounded-xl border shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-semibold text-indigo-600">Inventar UI</h3>
+        <p class="mt-3 text-gray-600">Modernes Inventarsystem mit erweiterten Funktionen & Design.</p>
+        <p class="mt-4 font-semibold text-gray-800">9,99€</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="DEINE_BUTTON_ID_HIER">
+          <button class="mt-6 w-full py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Mit PayPal kaufen</button>
+        </form>
+      </div>
     </div>
+  </section>
+
+  <section class="bg-white py-20 px-4" id="about">
+    <div class="container mx-auto text-center max-w-2xl">
+      <h2 class="text-3xl font-bold mb-4">Warum wir?</h2>
+      <p class="text-gray-600 text-lg">Wir liefern getestete, optimierte und einfach installierbare QB Core Scripts. Unsere Produkte sind serverfreundlich und kommen mit regelmäßigen Updates & Support via Discord.</p>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-20 px-4" id="contact">
+    <div class="container mx-auto text-center max-w-xl">
+      <h2 class="text-3xl font-bold mb-6">Kontakt</h2>
+      <p class="text-gray-700 mb-2">📧 <a href="mailto:support@qbscripts.de" class="text-indigo-600 hover:underline">support@qbscripts.de</a></p>
+      <p class="text-gray-700 mb-4">💬 <a href="#" class="text-indigo-600 hover:underline">Discord Server beitreten</a></p>
+      <iframe src="https://discord.com/widget?id=DEINE_DISCORD_SERVER_ID&theme=light" width="100%" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </section>
+
+  <footer class="bg-indigo-900 text-white text-center py-6">
+    <div class="text-sm">&copy; 2025 QB Scripts. Alle Rechte vorbehalten.</div>
   </footer>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
+
